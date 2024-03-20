@@ -10,7 +10,7 @@ export default function Form(props) {
       onSubmit={(event) => {
         event.preventDefault();
         setTasks([...tasks, { id: Math.random(), name: task, status: 0 }]);
-        // setTask(""); // empties input field
+        setTask(""); // empties input field
       }}
     >
       <input
